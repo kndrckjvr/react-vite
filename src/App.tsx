@@ -156,7 +156,17 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
-      <div className='container-full flex'>
+      <div className='container-full flex items-center'>
+        <div className='py-4 pl-4 pr-5'>
+          <span className='text-lg leading-4'>App Label</span>
+        </div>
+        <div className='pl-5 flex w-3/4'>
+          <span className='flex-1 text-center text-sm'>Home</span>
+          <span className='flex-1 text-center text-sm'>About</span>
+          <span className='flex-1 text-center text-sm'>Skills</span>
+          <span className='flex-1 text-center text-sm'>Project</span>
+          <span className='flex-1 text-center text-sm'>Contact</span>
+        </div>
         <div className='ml-auto p-4'>
           <ModeToggle />
         </div>
