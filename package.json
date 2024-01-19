@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "precommit": "lint-staged",
+    "type-check": "tsc --noEmit",
+    "precommit": "npm run type-check && lint-staged",
     "prepare": "husky install"
   },
   "lint-staged": {
