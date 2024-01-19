@@ -15,7 +15,7 @@ export type Payment = {
 
 export const columns: ColumnDef<Payment>[] = [
     {
-        id: "actions",
+        id: "action",
         enableResizing: false,
         size: 20,
         cell: ({ row }) => {
